@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN" "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="default" extends="struts-default">
+        <action name="home" class="com.example.HomeAction">
+            <result>/home.jsp</result>
+        </action>
+        <action name="home" class="com.user.HomeAction">
+    <result>/home.jsp</result>
+</action>
+
+<action name="addUser" class="com.user.HomeAction" method="addUser">
+    <result>/home.jsp</result>
+</action>
+        
+    </package>
+</struts>
